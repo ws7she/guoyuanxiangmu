@@ -12,5 +12,24 @@ html,body{
     background-color: greenyellow;
     background-image: url(../images/cut/bg_01.jpg);
     background-size: cover;
-
+    position: relative;
+}
+.game-topbar{
+    width: 1000px;
+    height: 208px;
+    position: absolute;
+    left: 50%;
+    margin-left: -498px;
+    background: url(../images/cut/daohang.png);
+    background-size: cover;
+    top: 0;
+}   
+.game-wrap{
+    width: 710px;
+    height: 376px;
+    position: absolute;
+    left: 34%;
+    top: 35%;
+    background: url(../images/cut/tudi.png);
+    background-size: cover;
 }
