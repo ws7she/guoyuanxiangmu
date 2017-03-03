@@ -14,23 +14,23 @@ var base = {
                 alert("用户名和密码都不为空")
             } else {
                 $.ajax({
-                    //url里面是请求的地址
-                    url: "http://www.baidu.com",
+                    url: "http://192.168.88.117/farm_grape/index.php/login/login_in",
                     data: ({
-                        //这里是 post请求时后端需要传的用户名和密码
-                        uid: uid,
-                        pwd: pwd
+                        u_Id: uid,
+                        u_PassWord: pwd
                     }),
                     type: "post",
-                    dataType:"json",
+                    dataType: "JSON",
                     success: function (data) {
                         //这里是请求成功后返回的数据
                         console.log(data);
+                        alert("请求成功");
 
                     },
                     error: function (res) {
                         console.log(res);
-                        console.log("请求失败")
+                        console.log("请求失败");
+
                     }
                 })
             }
