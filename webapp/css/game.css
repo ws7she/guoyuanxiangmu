@@ -1,12 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-html,body{
+
+html,
+body {
     width: 100%;
     height: 100%;
 }
-.game-container{
+
+.game-container {
     width: 100%;
     height: 100%;
     background-color: greenyellow;
@@ -14,7 +17,8 @@ html,body{
     background-size: cover;
     position: relative;
 }
-.game-topbar{
+
+.game-topbar {
     width: 1000px;
     height: 208px;
     position: absolute;
@@ -23,12 +27,41 @@ html,body{
     background: url(../images/cut/daohang.png);
     background-size: cover;
     top: 0;
-}   
-.game-wrap{
+}
+
+.game-main {
+    position: absolute;
+    width: 1100px;
+    height: 100%;
+    left: 50%;
+    margin-left: -500px;
+}
+
+.game-leftbar {
+    width: 267px;
+    height: 500px;
+    position: absolute;
+    left: 0;
+    background: url(../images/cut/zuocebg.png);
+    background-size: cover;
+    top: 20%;
+}
+
+.game-mode {
+    width: 156px;
+    height:182px;
+    background: url(../images/cut/lanhanmoshi.png);
+    background-size: cover;
+    position: absolute;
+    right: 84px;
+    top: 41%;
+}
+
+.game-wrap {
     width: 710px;
     height: 376px;
     position: absolute;
-    left: 34%;
+    left: 25%;
     top: 35%;
     background: url(../images/cut/tudi.png);
     background-size: cover;

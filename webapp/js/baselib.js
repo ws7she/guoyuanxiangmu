@@ -15,7 +15,7 @@ var base = {
             } else {
                 $.ajax({
                     //url里面是请求的地址
-                    url: "http://www.baidu.com",
+                    url: "http://192.168.88.123/farm_grape/index.php/login/login_in",
                     data: ({
                         //这里是 post请求时后端需要传的用户名和密码
                         uid: uid,
