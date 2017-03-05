@@ -29,7 +29,6 @@
 </script>
 
 <script>
-
 $.getJSON("data/index.json", function(data){
     var html = template('test', data);
     document.getElementById('content').innerHTML = html;

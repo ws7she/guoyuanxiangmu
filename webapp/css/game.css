@@ -1,12 +1,16 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    font: 12px/1.5 Tahoma,Helvetica,Arial,"\5FAE\8F6F\96C5\9ED1",sans-serif;
 }
-html,body{
+
+html,
+body {
     width: 100%;
     height: 100%;
 }
-.game-container{
+
+.game-container {
     width: 100%;
     height: 100%;
     background-color: greenyellow;
@@ -14,7 +18,8 @@ html,body{
     background-size: cover;
     position: relative;
 }
-.game-topbar{
+
+.game-topbar {
     width: 1000px;
     height: 208px;
     position: absolute;
@@ -23,13 +28,322 @@ html,body{
     background: url(../images/cut/daohang.png);
     background-size: cover;
     top: 0;
-}   
-.game-wrap{
+}
+.gamenav-main{
+    position: relative;
+    width: 820px;
+    margin: 22px auto;
+    height: 45px;
+    padding-left: 25px;
+    z-index: 10;
+}
+.gylink{
+    width: 45px;
+    background-position: -10px 3px;
+}
+.hylink{
+    width: 45px;
+    background-position: -10px -169px
+}
+.jylink{
+    width: 86px;
+    background-position: -10px -55px
+}
+.jflink{
+    width: 86px;
+    background-position: -10px -283px
+}
+.yxlink{
+    width: 86px;
+    background-position: -10px -227px
+}
+.grlink{
+    width: 86px;
+    background-position: -10px -113px
+}
+.lxlink{
+    width: 86px;
+    background-position: -10px -341px
+}
+.game-topbar a {
+    display: inline-block;
+    height: 35px;
+    background-image: url(../images/cut/wenzi.png);
+    background-size: 260px auto;
+    margin: 10px 0 0 15px;
+}
+.yxlink{
+    margin-left: 125px!important;
+}
+.game-topbar a:hover {
+    cursor: pointer
+}
+.game-main {
+    position: absolute;
+    width: 1100px;
+    height: 100%;
+    left: 50%;
+    margin-left: -500px;
+}
+
+.game-leftbar {
+    width: 337px;
+    height: 625px;
+    position: absolute;
+    left: -87px;
+    background: url(../images/cut/zuocebg.png);
+    background-size: cover;
+    top: 1%;
+}
+
+.game-mode {
+    width: 156px;
+    height:182px;
+    background: url(../images/cut/lanhanmoshi.png);
+    background-size: cover;
+    position: absolute;
+    right: 84px;
+    top: 41%;
+}
+
+.game-wrap {
     width: 710px;
     height: 376px;
     position: absolute;
-    left: 34%;
+    left: 25%;
     top: 35%;
     background: url(../images/cut/tudi.png);
     background-size: cover;
+}
+.ld1{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    left: 52px;
+    top: 100px;
+    transform:rotate(35deg) skew(-30deg);
+}
+.ld2{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    left: 132px;
+    top: 144px;
+    transform:rotate(35deg) skew(-30deg)
+}
+.ld3{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    left: 210px;
+    top: 180px;
+    transform:rotate(35deg) skew(-30deg)
+}
+.ld4{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    left: 280px;
+    top: 215px;
+    transform:rotate(35deg) skew(-30deg)
+}
+.ld5{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    left: 358px;
+    top: 256px;
+    transform:rotate(35deg) skew(-30deg)
+}
+.hj1{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    left: 140px;
+    top: 66px;
+    transform:rotate(35deg) skew(-30deg);
+}
+.hj2{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    left: 215px;
+    top: 105px;
+    transform:rotate(35deg) skew(-30deg)
+}
+.hj3{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    left: 295px;
+    top: 140px;
+    transform:rotate(35deg) skew(-30deg)
+}
+.hj4{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    left: 368px;
+    top: 174px;
+    transform:rotate(35deg) skew(-30deg)
+}
+.hj5{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    left: 446px;
+    top: 216px;
+    transform:rotate(35deg) skew(-30deg)
+}
+.td1{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    left: 222px;
+    top: 34px;
+    transform:rotate(35deg) skew(-30deg);
+}
+.td2{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    left: 298px;
+    top: 68px;
+    transform:rotate(35deg) skew(-30deg)
+}
+.td3{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    left: 370px;
+    top: 100px;
+    transform:rotate(35deg) skew(-30deg)
+}
+.td4{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    left: 444px;
+    top: 134px;
+    transform:rotate(35deg) skew(-30deg)
+}
+.td5{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    left: 523px;
+    top: 170px;
+    transform:rotate(35deg) skew(-30deg)
+}
+.game-bottombar{
+    width: 348px;
+    height: 100px;
+    position: absolute;
+    bottom: 3%;
+    font-size: 0;
+    left: 50%;
+    margin-left: -174px;
+}
+.chutou{
+    background: url(../images/cut/chutou.png);
+}
+.guaputao{
+    background: url(../images/cut/guaputao.png);
+}
+.zhaiputao{
+    background: url(../images/cut/zhaiputao.png);
+}
+.chutou,.guaputao,.zhaiputao{
+    display: inline-block;
+    width: 86px;
+    height: 100px;
+    background-size: cover;
+    margin: 0 15px;
+}
+.chutou:hover,.guaputao:hover,.zhaiputao:hover{
+    cursor: pointer;
+}
+.game-rightbar{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 280px;
+    height: 160px;
+    background: url(../images/cut/yxjt.png);
+    background-size: cover;
+}
+.putao{
+    position: absolute;
+    width: 70px;
+    height: 100px;
+    background: url(../images/cut/putao_1.png);
+    background-size: cover;
+    /*transform: rotate(-35deg) skew(20deg);*/
+    /*top: -72px;
+    left: -57px;*/
+    top: -52px;
+    left: 13px;;
+}
+.putao_2{
+    position: absolute;
+    width: 93px;
+    height: 147px;
+    background: url(../images/cut/putao_2.png);
+    background-size: cover;
+    /*transform: rotate(-25deg) skew(20deg);*/
+    /*top: -77px;
+    left: -67px;*/
+    top: -100px;
+    left: -16px;
+}
+.putao_3{
+    position: absolute;
+        width: 96px;
+    height: 150px;
+    background: url(../images/cut/putao_3.png);
+    background-size: cover;
+    /*transform: rotate(-26deg) skew(20deg);*/
+    /*top: -75px;
+    left: -62px;*/
+        top: -95px;
+    left: -17px;
+}
+.kuwei{
+    position: absolute;
+    width: 80px;
+    height: 159px;
+    background: url(../images/cut/kuwei.png);
+    background-size: cover;
+    /*transform: rotate(-35deg) skew(20deg);*/
+    /*top: -72px;
+    left: -57px;*/
+    top: -98px;
+    left: -3px;
+}
+
+.user-info{
+    position: relative;
+    margin-top: 55px;
+    margin-left: 35px;
+    width: 135px;
+    height: 80px;
+}
+.game-user{
+    display: inline-block;
+    width: 40px;
+}
+.user-id{
+    white-space: nowrap
+}
+.game-level{
+    display: inline-block;
+    width: 85px;
+    vertical-align: top;
+    margin-top: 5px;
+
+}
+.game-plant{
+    position: relative;
+    margin-top: 50px;
+    margin-left: 60px;
 }
