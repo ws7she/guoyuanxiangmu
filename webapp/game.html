@@ -55,12 +55,12 @@
     <script id="gameMessage" type="text/html">
                 <div class="user-info">
                     <div class="game-user">
-                        <img class="user-img" src={{u_photo}} width="40" height="40" />
-                        <div class="user-id">ID:{{u_id}}</div>
+                        <img class="user-img" src="{{u_Photo}}" width="40" height="40" />
+                        <div class="user-id">ID:{{u_Name}}</div>
                     </div>
                     <div class="game-level">
-                        <div class="user-level">等级：{{rank}}</div>
-                        <div class="user-money">{{property}}</div>
+                        <div class="user-level">等级：{{u_Rank}}</div>
+                        <div class="user-money">{{u_Property}}</div>
                     </div>
                 </div>
                 <div class="game-plant">
@@ -120,23 +120,23 @@
                 </div>
     </script>
 <script>
-    var guData;
-    $.post(
-        "http://121.199.52.79:8080/farm_grape/index.php/farm/farm_msg",
-        {
-            u_id: "uid",
-            username: "123",
-            rank: "1",
-            property: "12234",
-            al_plant: "123",
+    var leftData;
+    $.ajax({
+        url:"http://121.199.52.79:8080/farm_grape/index.php/farm/farm_msgL",
+        data:({
+            u_Id: "13800000000",
+        }),
+        type:"post",
+        dataType:"json",
+        success:function(res) {
+            leftData = res.content[0];
+            document.getElementById('gameUser').innerHTML = template('gameMessage', leftData);
         },
-        function (data) {
-            guData = data;
-            console.log(guData)
+        error:function(res) {
+            console.log(res)
         }
-    )
-    var html = template('gameMessage', guData);
-    document.getElementById('gameUser').innerHTML = html;
+    })
+    
 </script>
 <script type="text/javascript" src="js/game.js"></script>
 
