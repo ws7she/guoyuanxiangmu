@@ -32,21 +32,21 @@
                 <div id="game-money" id="gameMoney"></div>
             </div>
             <div class="game-wrap">
-                <div class="ld1 zero"></div>
-                <div class="ld2 zero"></div>
-                <div class="ld3 zero"></div>
-                <div class="ld4 zero"></div>
-                <div class="ld5 zero"></div>
-                <div class="hj1 zero"></div>
-                <div class="hj2 zero"></div>
-                <div class="hj3 zero"></div>
-                <div class="hj4 zero"></div>
-                <div class="hj5 zero"></div>
-                <div class="td1 zero"></div>
-                <div class="td2 zero"></div>
-                <div class="td3 zero"></div>
-                <div class="td4 zero"></div>
-                <div class="td5 zero"></div>
+                <div class="zero gy" data-index="15"></div>
+                <div class="zero gy" data-index="14"></div>
+                <div class="zero gy" data-index="13"></div>
+                <div class="zero gy" data-index="12"></div>
+                <div class="zero gy" data-index="11"></div>
+                <div class="zero gy" data-index="10"></div>
+                <div class="zero gy" data-index="9"></div>
+                <div class="zero gy" data-index="8"></div>
+                <div class="zero gy" data-index="7"></div>
+                <div class="zero gy" data-index="6"></div>
+                <div class="zero gy" data-index="5"></div>
+                <div class="zero gy" data-index="4"></div>
+                <div class="zero gy" data-index="3"></div>
+                <div class="zero gy" data-index="2"></div>
+                <div class="zero gy" data-index="1"></div>
             </div>
             <div class="game-mode"></div>
             <div class="game-bottombar">
@@ -123,48 +123,7 @@
                     </div>
                 </div>
       </script>
-    <script>
-        var leftData, rightData;
-        $.ajax({
-            url: "http://121.199.52.79:8080/farm_grape/index.php/farm/farm_msgL",
-            data: ({
-                u_Id: "13800000000",
-            }),
-            type: "post",
-            dataType: "json",
-            success: function (res) {
-                leftData = res.content[0];
-                console.log(leftData)
-                document.getElementById('user-info').innerHTML = template('gameUser', leftData);
-                // document.getElementById('game-plant').innerHTML = template('gamePlant', leftData);
-                document.getElementById('game-money').innerHTML = template('gameMoney', leftData);
-
-            },
-            error: function (res) {
-                console.log(res)
-            }
-        })
-        $.ajax({
-            url: "http://121.199.52.79:8080/farm_grape/index.php/farm/farm_msgR",
-            data: ({
-                u_Id: "13800000000",
-            }),
-            type: "post",
-            dataType: "json",
-            success: function (res) {
-                rightData = res.content[0];
-                console.log(rightData)
-                document.getElementById('game-plant').innerHTML = template('gamePlant', leftData);
-
-            },
-            error: function (res) {
-                console.log(res)
-            }
-        })
-
-    </script>
 <script type="text/javascript" src="js/game.js"></script>
-
 </body>
 
 </html>

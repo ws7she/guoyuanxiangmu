@@ -115,7 +115,7 @@ body {
     background: url(../images/cut/tudi.png);
     background-size: cover;
 }
-.ld1{
+.gy:nth-child(1){
     position: absolute;
     width: 75px;
     height: 75px;
@@ -123,7 +123,7 @@ body {
     top: 100px;
     transform:rotate(35deg) skew(-30deg);
 }
-.ld2{
+.gy:nth-child(2){
     position: absolute;
     width: 75px;
     height: 75px;
@@ -131,7 +131,7 @@ body {
     top: 144px;
     transform:rotate(35deg) skew(-30deg)
 }
-.ld3{
+.gy:nth-child(3){
     position: absolute;
     width: 75px;
     height: 75px;
@@ -139,7 +139,7 @@ body {
     top: 180px;
     transform:rotate(35deg) skew(-30deg)
 }
-.ld4{
+.gy:nth-child(4){
     position: absolute;
     width: 75px;
     height: 75px;
@@ -147,7 +147,7 @@ body {
     top: 215px;
     transform:rotate(35deg) skew(-30deg)
 }
-.ld5{
+.gy:nth-child(5){
     position: absolute;
     width: 75px;
     height: 75px;
@@ -155,7 +155,7 @@ body {
     top: 256px;
     transform:rotate(35deg) skew(-30deg)
 }
-.hj1{
+.gy:nth-child(6){
     position: absolute;
     width: 75px;
     height: 75px;
@@ -163,7 +163,7 @@ body {
     top: 66px;
     transform:rotate(35deg) skew(-30deg);
 }
-.hj2{
+.gy:nth-child(7){
     position: absolute;
     width: 75px;
     height: 75px;
@@ -171,7 +171,7 @@ body {
     top: 105px;
     transform:rotate(35deg) skew(-30deg)
 }
-.hj3{
+.gy:nth-child(8){
     position: absolute;
     width: 75px;
     height: 75px;
@@ -179,7 +179,7 @@ body {
     top: 140px;
     transform:rotate(35deg) skew(-30deg)
 }
-.hj4{
+.gy:nth-child(9){
     position: absolute;
     width: 75px;
     height: 75px;
@@ -187,7 +187,7 @@ body {
     top: 174px;
     transform:rotate(35deg) skew(-30deg)
 }
-.hj5{
+.gy:nth-child(10){
     position: absolute;
     width: 75px;
     height: 75px;
@@ -195,7 +195,7 @@ body {
     top: 216px;
     transform:rotate(35deg) skew(-30deg)
 }
-.td1{
+.gy:nth-child(11){
     position: absolute;
     width: 75px;
     height: 75px;
@@ -203,7 +203,7 @@ body {
     top: 34px;
     transform:rotate(35deg) skew(-30deg);
 }
-.td2{
+.gy:nth-child(12){
     position: absolute;
     width: 75px;
     height: 75px;
@@ -211,7 +211,7 @@ body {
     top: 68px;
     transform:rotate(35deg) skew(-30deg)
 }
-.td3{
+.gy:nth-child(13){
     position: absolute;
     width: 75px;
     height: 75px;
@@ -219,7 +219,7 @@ body {
     top: 100px;
     transform:rotate(35deg) skew(-30deg)
 }
-.td4{
+.gy:nth-child(14){
     position: absolute;
     width: 75px;
     height: 75px;
@@ -227,7 +227,7 @@ body {
     top: 134px;
     transform:rotate(35deg) skew(-30deg)
 }
-.td5{
+.gy:nth-child(15){
     position: absolute;
     width: 75px;
     height: 75px;
