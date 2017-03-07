@@ -1,7 +1,5 @@
 $(function () {
     var chutouStatus = false, guaptStatus = false, zhaiptStatus = false;
-    var plantLock = false;
-
     var game = {
         init: function () {
             this.wrapDom();
