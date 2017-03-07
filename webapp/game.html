@@ -24,7 +24,13 @@
             </div>
         </div>
         <div class="game-main">
-            <div class="game-leftbar" id="gameUser"></div>
+            <div class="game-leftbar">
+                <div id="user-info" class="user-info"></div>
+                <div class="game-plant" id="game-plant">
+                    
+                </div>
+                <div id="game-money" id="gameMoney"></div>
+            </div>
             <div class="game-wrap">
                 <div class="ld1 zero"></div>
                 <div class="ld2 zero"></div>
@@ -52,92 +58,111 @@
         <div class="game-rightbar"></div>
     </div>
 
-    <script id="gameMessage" type="text/html">
-                <div class="user-info">
-                    <div class="game-user">
-                        <img class="user-img" src="{{u_Photo}}" width="40" height="40" />
-                        <div class="user-id">ID:{{u_Name}}</div>
-                    </div>
-                    <div class="game-level">
-                        <div class="user-level">等级：{{u_Rank}}</div>
-                        <div class="user-money">{{u_Property}}</div>
-                    </div>
+    <script id="gameUser" type="text/html">
+        <div class="game-user">
+            <img class="user-img" src="{{u_Photo}}" width="40" height="40" />
+             <div class="user-id">ID:{{u_Name}}</div>
+         </div>
+         <div class="game-level">
+               <div class="user-level">等级：{{u_Rank}}</div>
+               <div class="user-money">{{u_Property}}</div>
+         </div>
+      </script>
+    <script id="gamePlant" type="text/html">
+        <div class="plant-num">种植：10000</div>
+            <div class="plant-list">
+                 <div class="tudi-type">黑土地</div>
+                 <div class="plant-all">葡萄树*{{f_Num}}=600</div>
+                 <div class="plant-grape">葡萄=100</div>
+              </div>
+              <div class="plant-list">
+                    <div class="tudi-type">金土地</div>
+                    <div class="plant-all">葡萄树*2=2000</div>
+                    <div class="plant-grape">葡萄=100</div>
+               </div>
+               <div class="plant-list">
+                    <div class="tudi-type">智慧土地</div>
+                     <div class="plant-all">葡萄树*2=4000</div>
+                      <div class="plant-grape">葡萄=100</div>
                 </div>
-                <div class="game-plant">
-                    <div class="plant-num">种植：10000</div>
-                    <div class="plant-list">
-                        <div class="tudi-type">黑土地</div>
-                        <div class="plant-all">葡萄树*2=600</div>
-                        <div class="plant-grape">葡萄=100</div>
-                    </div>
-                    <div class="plant-list">
-                        <div class="tudi-type">金土地</div>
-                        <div class="plant-all">葡萄树*2=2000</div>
-                        <div class="plant-grape">葡萄=100</div>
-                    </div>
-                    <div class="plant-list">
-                        <div class="tudi-type">智慧土地</div>
-                        <div class="plant-all">葡萄树*2=4000</div>
-                        <div class="plant-grape">葡萄=100</div>
-                    </div>
-                    <div class="game-money">
-                        <div class="money-num">累计收益：6000</div>
-                        <div class="money-list">
-                            <div class="money-type">葡萄仓库</div>
-                            <div class="money-all">3000</div>
-                        </div>
-                        <div class="money-list">
-                            <div class="money-type">葡萄种子</div>
-                            <div class="money-all">100</div>
-                            <a href="javascript:;" class="money-change">兑换</a>
-                        </div>
-                        <div class="money-list">
-                            <div class="money-type">当日收益葡萄</div>
-                            <div class="money-all">1000</div>
-                        </div>
-                        <div class="money-list">
-                            <div class="money-type">累计收益葡萄</div>
-                            <div class="money-all">1000</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="game-integral">
-                    <div class="integral-num">积分：50000</div>
+      </script>
+    <script id="gameMoney" type="text/html">
+                <div class="money-num">累计收益：{{u_AddUp}}</div>
+                <div class="money-list">
+                     <div class="money-type">葡萄仓库</div>
+                     <div class="money-all">{{u_Inventory}}</div>
+                 </div>
+                 <div class="money-list">
+                      <div class="money-type">葡萄种子</div>
+                       <div class="money-all">{{u_Seed}}</div>
+                       <a href="javascript:;" class="money-change">兑换</a>
+                  </div>
+                  <div class="money-list">
+                        <div class="money-type">当日收益葡萄</div>
+                        <div class="money-all">{{u_earning}}</div>
+                   </div>
+                   <div class="money-list">
+                        <div class="money-type">累计收益葡萄</div>
+                        <div class="money-all">{{u_AddUp}}</div>
+                   </div>
+                   <div class="game-integral">
+                    <div class="integral-num">积分：{{u_Integ}}</div>
                     <div class="animal">
                         <div class="animal-list">
-                            <div class="animal-tit">智慧卫士*4</div>
+                            <div class="animal-tit">智慧卫士*{{f_Body}}</div>
                             <div class="animal-qishi"></div>
                         </div>
                         <div class="animal-list">
-                            <div class="animal-tit">智慧狗</div>
+                            <div class="animal-tit">智慧狗*{{f_Dog}}</div>
                             <div class="animal-dog"></div>
                         </div>
                         <div class="animal-list">
-                            <div class="animal-tit">火麒麟</div>
+                            <div class="animal-tit">火麒麟*{{f_Kyin}}</div>
                             <div class="animal-qilin"></div>
                         </div>
                     </div>
                 </div>
+      </script>
+    <script>
+        var leftData, rightData;
+        $.ajax({
+            url: "http://121.199.52.79:8080/farm_grape/index.php/farm/farm_msgL",
+            data: ({
+                u_Id: "13800000000",
+            }),
+            type: "post",
+            dataType: "json",
+            success: function (res) {
+                leftData = res.content[0];
+                console.log(leftData)
+                document.getElementById('user-info').innerHTML = template('gameUser', leftData);
+                // document.getElementById('game-plant').innerHTML = template('gamePlant', leftData);
+                document.getElementById('game-money').innerHTML = template('gameMoney', leftData);
+
+            },
+            error: function (res) {
+                console.log(res)
+            }
+        })
+        $.ajax({
+            url: "http://121.199.52.79:8080/farm_grape/index.php/farm/farm_msgR",
+            data: ({
+                u_Id: "13800000000",
+            }),
+            type: "post",
+            dataType: "json",
+            success: function (res) {
+                rightData = res.content[0];
+                console.log(rightData)
+                document.getElementById('game-plant').innerHTML = template('gamePlant', leftData);
+
+            },
+            error: function (res) {
+                console.log(res)
+            }
+        })
+
     </script>
-<script>
-    var leftData;
-    $.ajax({
-        url:"http://121.199.52.79:8080/farm_grape/index.php/farm/farm_msgL",
-        data:({
-            u_Id: "13800000000",
-        }),
-        type:"post",
-        dataType:"json",
-        success:function(res) {
-            leftData = res.content[0];
-            document.getElementById('gameUser').innerHTML = template('gameMessage', leftData);
-        },
-        error:function(res) {
-            console.log(res)
-        }
-    })
-    
-</script>
 <script type="text/javascript" src="js/game.js"></script>
 
 </body>
