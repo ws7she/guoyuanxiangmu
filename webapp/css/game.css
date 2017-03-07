@@ -347,3 +347,8 @@ body {
     margin-top: 50px;
     margin-left: 60px;
 }
+.game-money{
+    position: relative;
+    margin-top: 50px;
+    margin-right: 60px;
+}

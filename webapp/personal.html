@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心</title>
+    <script src="dist/template.js"></script>
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js"></script>
+</head>
+
+<body>
+
+    <ul class="clearfix" id="hylist"> </ul>
+    <script id="test" type="text/html">
+        {{each content as value i}}
+        <li class="haha">
+            <span class="uid">{{value.u_Id}}</span>
+            <span class="uname">{{value.u_ParentID}}</span>
+            <a href="javascript:;" class="link" >激活</a>
+        </li>
+        {{/each}}
+    </script>
+    <script>
+        $.ajax({
+            url: "http://121.199.52.79:8080/farm_grape/index.php/login/activate_go",
+            data: ({
+                u_Id: "13800000000"
+            }),
+            type: "post",
+            dataType: "json",
+            success: function (data) {
+                if (data.code == 200) {
+                    var html = template('test', data);
+                    document.getElementById('hylist').innerHTML = html;
+                    $(".link").on("click", function () {
+                        console.log($(this).siblings('.uid').html())
+                    })
+                }
+            },
+        })
+    </script>
+</body>
+
+</html>
