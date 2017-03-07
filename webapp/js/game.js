@@ -43,65 +43,68 @@ $(function () {
                 var land_state = false;
                 var land_time = new Date().getTime();
                 if (chutouStatus) {
-                    $.ajax({
-                        url: "http://121.199.52.79:8080/index.php/orchard/plant",
-                        data: ({
-                            u_Id: uid,
-                            u_PassWord: pwd,
-                            land_id: land_id,
-                            land_state: land_state,
-                            land_time: land_time
-                        }),
-                        type: "post",
-                        dataType: "JSON",
-                        success: function (data) {
-                            console.log(data);
-                            $(selector).attr('class', main + " one");
-                            $(selector).css("transform", "rotate(0) skew(0)");
-                            $(selector).html(xiaoshu);
-                            chutouStatus = false;
-                        },
-                        error: function (res) {
-                            console.log(res);
-                            alert("接口请求失败，请重试")
-                        }
-                    })
+                    $(selector).attr('class', main + " one");
+                    $(selector).css("transform", "rotate(0) skew(0)");
+                    $(selector).html(xiaoshu);
+                    chutouStatus = false;
+                    // $.ajax({
+                    //     url: "http://121.199.52.79:8080/index.php/farm/plant",
+                    //     data: ({
+                    //         u_Id: "13800000000",
+                    //         land_id: 1,
+                    //         land_state: "0",
+                    //         land_time: land_time
+                    //     }),
+                    //     type: "post",
+                    //     dataType: "JSON",
+                    //     success: function (data) {
+                    //         console.log(data);
+                            
+                    //         chutouStatus = false;
+                    //     },
+                    //     error: function (res) {
+                    //         console.log(res);
+                    //         alert("接口请求失败，请重试")
+                    //     }
+                    // })
 
                 }
             }
+            // if ($(selector).hasClass("one")) {
+            //     if (guaptStatus) {
+            //         $(selector).attr("class", main + " two");
+            //         $(selector).css("transform", "rotate(0) skew(0)");
+            //         $(selector).html(zhongshu);
+            //         guaptStatus = false;
+            //     }
+            // }
             if ($(selector).hasClass("one")) {
-                if (guaptStatus) {
-                    $(selector).attr("class", main + " two");
-                    $(selector).css("transform", "rotate(0) skew(0)");
-                    $(selector).html(zhongshu);
-                    guaptStatus = false;
-                }
-            }
-            if ($(selector).hasClass("two")) {
                 if (guaptStatus) {
                     $(selector).attr("class", main + " three");
                     $(selector).css("transform", "rotate(0) skew(0)");
                     $(selector).html(dashu);
+                    guaptStatus = false;
+                }
+                if (zhaiptStatus) {
+                    // $(selector).attr("class", main + " four");
+                    // $(selector).css("transform", "rotate(0) skew(0)");
+                    // $(selector).html(kuwei);
+                    alert("不能摘！")
+                    zhaiptStatus = false;
+                }
+            }
+            if ($(selector).hasClass("three")) {
+                if (guaptStatus) {
+                    // $(selector).attr("class", main + " three");
+                    // $(selector).css("transform", "rotate(0) skew(0)");
+                    // $(selector).html(dashu);
+                    alert("不能挂！")
                     guaptStatus = false;
                 }
                 if (zhaiptStatus) {
                     $(selector).attr("class", main + " four");
                     $(selector).css("transform", "rotate(0) skew(0)");
                     $(selector).html(kuwei);
-                    zhaiptStatus = false;
-                }
-            }
-            if ($(selector).hasClass("three")) {
-                if (guaptStatus) {
-                    $(selector).attr("class", main + " three");
-                    $(selector).css("transform", "rotate(0) skew(0)");
-                    $(selector).html(dashu);
-                    guaptStatus = false;
-                }
-                if (zhaiptStatus) {
-                    $(selector).attr("class", main + " two");
-                    $(selector).css("transform", "rotate(0) skew(0)");
-                    $(selector).html(zhongshu);
                     zhaiptStatus = false;
                 }
             }
