@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    font: 12px/1.5 Tahoma,Helvetica,Arial,"\5FAE\8F6F\96C5\9ED1",sans-serif;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+.game-container {
+    width: 100%;
+    height: 100%;
+    background-color: greenyellow;
+    background-image: url(../images/cutmobile/bg.png);
+    background-size: cover;
+    position: relative;
+}
+.game-wrap{
+    width: 530px;
+    height: 285px;
+    background-image: url(../images/cutmobile/tudi.png);
+    background-size: 530px auto;
+    position: absolute;
+    top: 25%;
+    left: 32%;
+}
+.gy:nth-child(1){
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    left: 43px;
+    top: 80px;
+    transform:rotate(35deg) skew(-30deg);
+}
+.gy:nth-child(2){
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    left: 98px;
+    top: 105px;
+    transform:rotate(35deg) skew(-30deg)
+}
+.gy:nth-child(3){
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    left: 155px;
+    top: 135px;
+    transform:rotate(35deg) skew(-30deg)
+}
+.gy:nth-child(4){
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    left: 210px;
+    top: 163px;
+    transform:rotate(35deg) skew(-30deg)
+}
+.gy:nth-child(5){
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    left: 272px;
+    top: 195px;
+    transform:rotate(35deg) skew(-30deg)
+}
+.gy:nth-child(6){
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    left: 108px;
+    top: 55px;
+    transform:rotate(35deg) skew(-30deg);
+}
+.gy:nth-child(7){
+    position: absolute;
+     width: 58px;
+    height: 58px;
+    left: 165px;
+    top: 80px;
+    transform:rotate(35deg) skew(-30deg)
+}
+.gy:nth-child(8){
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    left: 220px;
+    top: 105px;
+    transform:rotate(35deg) skew(-30deg)
+}
+.gy:nth-child(9){
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    left: 270px;
+    top: 130px;
+    transform:rotate(35deg) skew(-30deg)
+}
+.gy:nth-child(10){
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    left: 335px;
+    top: 160px;
+    transform:rotate(35deg) skew(-30deg)
+}
+.gy:nth-child(11){
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    left: 170px;
+    top: 30px;
+    transform:rotate(35deg) skew(-30deg);
+}
+.gy:nth-child(12){
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    left: 230px;
+    top: 55px;
+    transform:rotate(35deg) skew(-30deg)
+}
+.gy:nth-child(13){
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    left: 275px;
+    top: 75px;
+    transform:rotate(35deg) skew(-30deg)
+}
+.gy:nth-child(14){
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    left: 324px;
+    top: 98px;
+    transform:rotate(35deg) skew(-30deg)
+}
+.gy:nth-child(15){
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    left: 385px;
+    top: 126px;
+    transform:rotate(35deg) skew(-30deg)
+}
+.game-bottombar{
+    width: 348px;
+    height: 100px;
+    position: absolute;
+    bottom: 3%;
+    font-size: 0;
+    left: 50%;
+    margin-left: -174px;
+}
+.chutou{
+    background: url(../images/cutmobile/chutou.png);
+}
+.guaputao{
+    background: url(../images/cutmobile/guaputao.png);
+}
+.zhaiputao{
+    background: url(../images/cutmobile/zhaiputao.png);
+}
+.chutou,.guaputao,.zhaiputao{
+    display: inline-block;
+    width: 86px;
+    height: 100px;
+    background-size: cover;
+    margin: 0 15px;
+}
+.putao{
+    position: absolute;
+    width: 70px;
+    height: 100px;
+    background: url(../images/cut/putao_1.png);
+    background-size: cover;
+    top: -67px;
+    left: -2px;
+}
+.putao_2{
+    position: absolute;
+    width: 93px;
+    height: 147px;
+    background: url(../images/cut/putao_2.png);
+    background-size: cover;
+    top: -100px;
+    left: -16px;
+}
+.putao_3{
+    position: absolute;
+        width: 96px;
+    height: 150px;
+    background: url(../images/cut/putao_3.png);
+    background-size: cover;
+    top: -117px;
+    left: -30px;
+}
+.kuwei{
+    position: absolute;
+    width: 80px;
+    height: 159px;
+    background: url(../images/cut/kuwei.png);
+    background-size: cover;
+    top: -98px;
+    left: -3px;
+}

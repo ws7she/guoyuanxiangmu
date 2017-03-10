@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>葡萄果园demo</title>
+    <link href="css/gamemobile.css" rel="stylesheet" type="text/css">
+    <script src="dist/template.js"></script>
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js"></script>
+</head>
+
+<body>
+
+    <div class="game-container">
+        <div class="game-main">
+            <div class="game-wrap">
+                <div class="zero gy"></div>
+                <div class="zero gy"></div>
+                <div class="zero gy"></div>
+                <div class="zero gy"></div>
+                <div class="zero gy"></div>
+                <div class="zero gy"></div>
+                <div class="zero gy"></div>
+                <div class="zero gy"></div>
+                <div class="zero gy"></div>
+                <div class="zero gy"></div>
+                <div class="zero gy"></div>
+                <div class="zero gy"></div>
+                <div class="zero gy"></div>
+                <div class="zero gy"></div>
+                <div class="zero gy"></div>
+            </div>
+            <div class="game-mode"></div>
+            <div class="game-bottombar">
+                <div class="chutou"></div>
+                <div class="guaputao"></div>
+                <div class="zhaiputao"></div>
+            </div>
+        </div>
+        <div class="game-rightbar"></div>
+    </div>
+
+    <script id="gameUser" type="text/html">
+        <div class="game-user">
+            <img class="user-img" src="{{u_Photo}}" width="40" height="40" />
+             <div class="user-id">ID:{{u_Name}}</div>
+         </div>
+         <div class="game-level">
+               <div class="user-level">等级：{{u_Rank}}</div>
+               <div class="user-money">{{u_Property}}</div>
+         </div>
+      </script>
+    <script id="gamePlant" type="text/html">
+        <div class="plant-num">种植：10000</div>
+            <div class="plant-list">
+                 <div class="tudi-type">黑土地</div>
+                 <div class="plant-all">葡萄树*{{f_Num}}=600</div>
+                 <div class="plant-grape">葡萄=100</div>
+              </div>
+              <div class="plant-list">
+                    <div class="tudi-type">金土地</div>
+                    <div class="plant-all">葡萄树*2=2000</div>
+                    <div class="plant-grape">葡萄=100</div>
+               </div>
+               <div class="plant-list">
+                    <div class="tudi-type">智慧土地</div>
+                     <div class="plant-all">葡萄树*2=4000</div>
+                      <div class="plant-grape">葡萄=100</div>
+                </div>
+      </script>
+    <script id="gameMoney" type="text/html">
+                <div class="money-num">累计收益：{{u_AddUp}}</div>
+                <div class="money-list">
+                     <div class="money-type">葡萄仓库</div>
+                     <div class="money-all">{{u_Inventory}}</div>
+                 </div>
+                 <div class="money-list">
+                      <div class="money-type">葡萄种子</div>
+                       <div class="money-all">{{u_Seed}}</div>
+                       <a href="javascript:;" class="money-change">兑换</a>
+                  </div>
+                  <div class="money-list">
+                        <div class="money-type">当日收益葡萄</div>
+                        <div class="money-all">{{u_earning}}</div>
+                   </div>
+                   <div class="money-list">
+                        <div class="money-type">累计收益葡萄</div>
+                        <div class="money-all">{{u_AddUp}}</div>
+                   </div>
+                   <div class="game-integral">
+                    <div class="integral-num">积分：{{u_Integ}}</div>
+                    <div class="animal">
+                        <div class="animal-list">
+                            <div class="animal-tit">智慧卫士*{{f_Body}}</div>
+                            <div class="animal-qishi"></div>
+                        </div>
+                        <div class="animal-list">
+                            <div class="animal-tit">智慧狗*{{f_Dog}}</div>
+                            <div class="animal-dog"></div>
+                        </div>
+                        <div class="animal-list">
+                            <div class="animal-tit">火麒麟*{{f_Kyin}}</div>
+                            <div class="animal-qilin"></div>
+                        </div>
+                    </div>
+                </div>
+      </script>
+<script type="text/javascript" src="js/game_mobile.js"></script>
+</body>
+
+</html>
