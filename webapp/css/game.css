@@ -352,3 +352,43 @@ body {
     margin-top: 50px;
     margin-right: 60px;
 }
+.user-money{
+    background: url(../images/cut/zuoce_ico.png);
+    /*background-size: ;*/
+    width: 100px;
+    height: 20px;
+    background-position: 10px 10px;
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.plant-num{
+    color: white;
+    padding-top: 8px;
+    padding-left: 15px;
+    width: 80px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.plant-list{
+    width: 200px;
+    height: 90px;
+    background: url(../images/cut/list.png);
+    background-size:200px 90px;
+    margin-left: 10px;
+    margin-top: 6px;
+}
+#game-money{
+    position: relative;
+    margin-top: 15px;
+    margin-left: 60px;
+    color: #fff;
+}
+.money-num{
+    padding-left: 18px;
+}
+.money-type{
+    background: url(../images/cut/zuoce_ico.png);
+}

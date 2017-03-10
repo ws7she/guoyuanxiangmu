@@ -114,12 +114,9 @@ $(function () {
                             f_Id: mainValue
                         }),
                         type: "post",
-                        headers: {
-                            "Content-Type": "application/json;charset=utf-8"
-                        },
                         dataType: "JSON",
-                        success: function (data) {
-                            console.log(data)
+                        success: function (res) {
+                            var data = JSON.parse(res)
                             if (data.code == "200") {
                                 $(selector).attr('class', main + " one");
                                 $(selector).css("transform", "rotate(0) skew(0)");
@@ -162,11 +159,8 @@ $(function () {
                         }),
                         type: "post",
                         dataType: "JSON",
-                        headers: {
-                            "Content-Type": "application/json;charset=utf-8"
-                        },
-                        success: function (data) {
-                            console.log(data)
+                        success: function (res) {
+                            var data = JSON.parse(res)
                             if (data.code == "200") {
                                 $(selector).attr("class", main + " three");
                                 $(selector).css("transform", "rotate(0) skew(0)");
@@ -213,11 +207,8 @@ $(function () {
                         }),
                         type: "post",
                         dataType: "JSON",
-                        headers: {
-                            "Content-Type": "application/json;charset=utf-8"
-                        },
-                        success: function (data) {
-                            console.log(data)
+                        success: function (res) {
+                            var  data = JSON.parse(res)
                             if (data.code == "200") {
                                 // $(selector).attr("class", main + " four");
                                 $(selector).attr("class", main + " one");

@@ -12,7 +12,7 @@
 <body>
 
     <div class="game-container">
-        <div class="game-topbar">
+        <div class="game-topbar" style="display:none">
             <div class="gamenav-main">
                 <a href="javascript:;" class="gylink"></a>
                 <a href="javascript:;" class="hylink"></a>
@@ -24,14 +24,14 @@
             </div>
         </div>
         <div class="game-main">
-            <div class="game-leftbar" style="display: none">
+            <div class="game-leftbar" style="display:block;left: 330px; z-index: 10">
                 <div id="user-info" class="user-info"></div>
                 <div class="game-plant" id="game-plant">
                     
                 </div>
                 <div id="game-money" id="gameMoney"></div>
             </div>
-            <div class="game-wrap">
+            <div class="game-wrap" style="display:none">
                 <div class="zero gy"></div>
                 <div class="zero gy"></div>
                 <div class="zero gy"></div>
@@ -69,22 +69,8 @@
          </div>
       </script>
     <script id="gamePlant" type="text/html">
-        <div class="plant-num">种植：10000</div>
-            <div class="plant-list">
-                 <div class="tudi-type">黑土地</div>
-                 <div class="plant-all">葡萄树*{{f_Num}}=600</div>
-                 <div class="plant-grape">葡萄=100</div>
-              </div>
-              <div class="plant-list">
-                    <div class="tudi-type">金土地</div>
-                    <div class="plant-all">葡萄树*2=2000</div>
-                    <div class="plant-grape">葡萄=100</div>
-               </div>
-               <div class="plant-list">
-                    <div class="tudi-type">智慧土地</div>
-                     <div class="plant-all">葡萄树*2=4000</div>
-                      <div class="plant-grape">葡萄=100</div>
-                </div>
+        <div class="plant-num">种植：{{u_Plant}}</div>
+            <div class="plant-list"></div>
       </script>
     <script id="gameMoney" type="text/html">
                 <div class="money-num">累计收益：{{u_AddUp}}</div>

@@ -46,6 +46,7 @@ $(function () {
                 type: "post",
                 dataType: "json",
                 success: function (res) {
+                    console.log(res.content[0])
                     leftData = res.content[0];
                     document.getElementById('user-info').innerHTML = template('gameUser', leftData);
                     document.getElementById('game-money').innerHTML = template('gameMoney', leftData);

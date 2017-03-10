@@ -9,42 +9,30 @@
 
 <body>
     <form name="form" id="form">
-        <input type="file" id="photo" name="u_Photo" />
+        <input type="file" id="photo" name="file" />
     </form>
     <script type="text/javascript">
-        (function ($) {
-            $.getUrlParam = function (name) {
-                var reg = new RegExp("(^|&)" +
-                    name + "=([^&]*)(&|$)");
-                var r = window.location.search.substr(1).match(reg);
-                if (r != null) return unescape(r[2]);
-                return null;
-            }
-        })(jQuery);
-        // window.location = "http://localhost:3300/photo.html?uid=1212212&uname=21121"
-        console.log($.getUrlParam('uname'))
         $("#photo").on("change", function () {
-            // var formData = new FormData(document.getElementById("form"));
-            // formData.append("u_Id","13800000000");
-            // console.log(formData.entries().next())
-            // $.ajax({
-            //     url: 'http://121.199.52.79:8080/farm_grape/index.php/login/upload_photo', //用于文件上传的服务器端请求地址
-            //     dataType: 'json', 
-            //     data: formData,
-            //     type: "post",
-            //     cache: false,
-            //     processData: false,
-            //     contentType: false,
-            //     success: function (data, status) 
-            //     {
-            //         console.log(data)
-            //     },
-            //     error: function (data, status, e) 
-            //     {
-            //         alert(e);
-            //     }
-            // })
-
+            var formData = new FormData(document.getElementById("form"));
+            formData.append("u_Id","13800000000");
+            $.ajax({
+                url: 'http://121.199.52.79:8080/farm_grape/index.php/login/upload_photo', //用于文件上传的服务器端请求地址
+                dataType: 'json', 
+                data: formData,
+                type: "post",
+                cache: false,
+                processData: false,
+                contentType: false,
+                success: function (data, status) 
+                {
+                    console.log(data)
+                },
+                error: function (data, status, e) 
+                {
+                    // alert(e);
+                    console.log(data)
+                }
+            })
         })
     </script>
 </body>
