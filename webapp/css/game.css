@@ -354,10 +354,9 @@ body {
 }
 .user-money{
     background: url(../images/cut/zuoce_ico.png);
-    /*background-size: ;*/
-    width: 100px;
-    height: 20px;
-    background-position: 10px 10px;
+    width: 115px;
+    height: 30px;
+    background-position: -64px -50px;
     position: absolute;
     overflow: hidden;
     white-space: nowrap;
